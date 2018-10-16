@@ -1,1 +1,1 @@
-jchpyserver: python3.7 main.py
+jchpyserver: python ./main.py
