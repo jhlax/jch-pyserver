@@ -1,1 +1,1 @@
-web: python ./main.py
+jch-pyserver: python ./main.py
