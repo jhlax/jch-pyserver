@@ -3,11 +3,13 @@ import os
 from flask import Flask
 
 app = Flask(__name__)
+# Comment below for production.
+app.config['DEBUG'] = True
 
 
 @app.route('/')
 def index():
-    return 'Success. 1-2-3.'
+    return 'Hooyah'
 
 
 if __name__ == '__main__':
