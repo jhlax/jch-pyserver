@@ -1,0 +1,9 @@
+.byline {
+    font-style: italic;
+    color: gray;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    padding: .3em 0;
+}
