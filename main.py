@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 
 @app.route('/')
 def index():
-    return 'SOFTMAX.LIVE'
+    return app.send_static_file('html/main.html')
 
 
 if __name__ == '__main__':

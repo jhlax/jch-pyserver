@@ -13,6 +13,10 @@ class Session:
     tempo: float = 128.0
     sampling_rate: float = 48000.
 
+    def __init__(self, repitch_root=None, rounding=None):
+        self.REPITCH_ROOT = repitch_root or self.REPITCH_ROOT
+        self.ROUND = rounding or self.ROUND
+
     def _repitch(self, rate, steps):
         return round(rate * (2 ** (steps / self.REPITCH_ROOT)), self.ROUND)
 
@@ -84,4 +88,4 @@ class Session:
 
 a = Session()
 
-pprint(a.measures_halves(5))
+pprint(a.measures_halves(10))
